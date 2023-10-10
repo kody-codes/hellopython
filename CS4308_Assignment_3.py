@@ -104,14 +104,49 @@ def main():
                 
                 courses[user_course_choice].set_course_name(course_name_change)
 
+            elif user_attribute_choice == 2:
 
-        
+                print("What would you like to change the course number to?")
+                course_number_change = input()
+
+                print("Changing course number...")
+
+                courses[user_course_choice].set_course_number(course_number_change)
+
+            elif user_attribute_choice == 3:
+
+                print("What would you like to change the course section to?")
+                course_section_change = input()
+
+                print("Changing course section...")
+
+                courses[user_course_choice].set_course_section(course_section_change)
+
+            elif user_attribute_choice == 4:
+
+                print("What would you like to change the Course Term and Year to?")
+                course_term_and_year_change = input()
+
+                print("Changing course term and year...")
+                
+                courses[user_course_choice].set_course_term_and_year(course_term_and_year_change)
+
+            elif user_attribute_choice == 5:
+
+                print("What would you like to change the number of students to?")
+                number_of_students_change = input()
+
+                print("Changing number of students...")
+
+                courses[user_course_choice].set_number_of_students(number_of_students_change)
+
+
         elif menu_selection == 3:
 
             Course.print_courses(courses)
         
         else:
-            print("Please enter a valid choice.")
+            print("Quitting...")
 
 
 if __name__ =="__main__":
